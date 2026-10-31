@@ -1,5 +1,7 @@
 # pixiwright
 
+[![CI](https://github.com/Heba-Dora/pixiwright/actions/workflows/ci.yml/badge.svg)](https://github.com/Heba-Dora/pixiwright/actions/workflows/ci.yml)
+
 Playwright locators, assertions, and a frozen clock for [PixiJS](https://pixijs.com) canvases.
 
 ```ts
