@@ -1,0 +1,39 @@
+{
+  "name": "pixiwright",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playwright locators, assertions, and a frozen clock for PixiJS canvases.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "docs/DESIGN.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck:tests": "tsc -p test/tsconfig.json",
+    "test": "npm run build && npm run typecheck:tests && playwright test",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "@playwright/test": "^1.64.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "22.20.2",
+    "pixi.js": "8.22.0",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

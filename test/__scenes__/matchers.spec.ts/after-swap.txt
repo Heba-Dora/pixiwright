@@ -1,0 +1,3 @@
+- Graphics "swap"
+- Text "status": "Ready"
+- Graphics "swap-target" (hidden: "swap-target" has visible = false)
